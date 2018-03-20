@@ -17,4 +17,6 @@ osascript ./evernote_new_task_entry.applescript
 You can define a crontab to run this script at a scheduled time. Follow the instructions that you can find [here](https://ole.michelsen.dk/blog/schedule-jobs-with-crontab-on-mac-osx.html).
 
 An example of what to add to the crontab for this script to run every half hour is:
-`0/30 * * * 1-5 osascript <path-to-the-.applescript-file>`
+```
+0/30 * * * 1-5 osascript <path-to-the-.applescript-file>
+`
