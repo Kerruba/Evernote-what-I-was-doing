@@ -19,4 +19,4 @@ You can define a crontab to run this script at a scheduled time. Follow the inst
 An example of what to add to the crontab for this script to run every half hour is:
 ```
 0/30 * * * 1-5 osascript <path-to-the-.applescript-file>
-`
+```
