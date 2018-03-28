@@ -2,7 +2,7 @@ tell application "Evernote"
 	activate
 	set alertTitle to "Checking for new task"
 	set alertMessage to "Do you want to add a new entry to the task list?"
-	set alertDialog to display alert alertTitle message alertMessage buttons {"Yes", "No"} default button "No" giving up after 5
+	set alertDialog to display alert alertTitle message alertMessage buttons {"Yes", "No"} default button "No" giving up after 10
 	if button returned of alertDialog = "No" then
 		return
 	end if
