@@ -1,5 +1,11 @@
 tell application "Evernote"
 	activate
+	set alertTitle to "Checking for new task"
+	set alertMessage to "Do you want to add a new entry to the task list?"
+	set alertDialog to display alert alertTitle message alertMessage buttons {"Yes", "No"} default button "Yes" giving up after 5
+	if button returned of alertDialog = "No" then
+		return
+	end if
 	set notebook_name to "Journals"
 	set note_name to "What I am doing"
 	set note_query to "notebook:\"" & notebook_name & "\" intitle:\"" & note_name & "\""
